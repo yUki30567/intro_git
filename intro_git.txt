@@ -37,5 +37,5 @@ Gitの練習をしていきます。
 　git log -p ：ファイルの差分を表示する
 　git log -n ●数字●：最新のコミットn番目までを表示
 　git log --oneline：1行で表示
-　git log --oneline -p： 
-　git log --oneline -n ●数字●：最新のログからn番目までを表示
+　git log --oneline -p [ファイル名]
+　git log --oneline -n ●数字●
