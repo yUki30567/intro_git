@@ -23,3 +23,4 @@ git statusでファイルの変更状態を確認
 
 ・git add
 ・git commit
+・git rm
