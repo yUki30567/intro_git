@@ -38,6 +38,8 @@ git diff → ローカルファイルとステージングエリア内の差分�
 git diff HEAD → ステージングエリアとローカルリポジトリ内の差分を比較するコマンド
 
 git remote add origin ●GitHubのURL● → リモートリポジトリ(GitHub上)へ新しいファイルをpushする際に使用するコマンド　※既に存在する他愛は不要
+git reset ●ファイル名●　→ 削除したファイルの復元
+git rm --cached ●ファイル名●　→ ファイルは保存するがgitで管理しない方法
 
 
 
