@@ -46,9 +46,11 @@ git reset ●ファイル名●　→ 削除したファイルの復元
 
 
 ▼ファイルのトラッキングから外す方法
-1.「.gitignore」フォルダを作成　→ mkdir .gitignore
-2.ファイルをリムーブ　→ git rm --cached ●ファイル名●
-3.変更内容をpushする　→ git push origin [master|main]
+1.'.gitignore'ファイルを作成　→ mkdir .gitignore | touch .gitignore && open .gitignore
+2.作成した'.gitignore'の中に無視したいファイル名を記述
+3.除外したいファイルをrm削除　→ git rm --cached ●管理から除外したいファイル名●
+4.変更をadd → git add .
+5.変更をpushする　→ git push origin [master|main]
 
 ---------------------------------------------------------------------------------------
 
