@@ -1,6 +1,18 @@
 
 ▼学習メモ
 
+▼初期設定
+------------------------------------------------------------
+git config --global user.name "●ユーザーネーム●"
+git config --global user.email ●登録済みのメールアドレス●
+git config --global core.editor "[code|atom] --wait" 
+
+
+設定内容の確認コマンド
+git congig user.name ※登録したユーザーネームの表示
+git congig user.email ※登録したemailアドレスの表示
+git config --list 設定内容を全て表示
+------------------------------------------------------------
 
 
 2023/10/13 Git Lesson 1
