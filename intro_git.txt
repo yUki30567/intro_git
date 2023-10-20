@@ -5,6 +5,9 @@
 
 2023/10/13 Git Lesson 1
 ---------------------------------------------------------------------------------------
+
+git init → ローカルリポジトリの新規作成
+
 対象ファイルが格納されているフォルダへcdで移動
 git statusでファイルの変更状態を確認
 
@@ -37,7 +40,7 @@ git statusでファイルの変更状態を確認
 git diff → ローカルファイルとステージングエリア内の差分を比較するコマンド
 git diff HEAD → ステージングエリアとローカルリポジトリ内の差分を比較するコマンド
 
-git remote add origin ●GitHubのURL● → リモートリポジトリ(GitHub上)へ新しいファイルをpushする際に使用するコマンド　※既に存在する他愛は不要
+git remote add origin ●GitHubのURL● → リモートリポジトリ(GitHub上)へ新しいファイルをpushする際に使用するコマンド　※既に存在する場合は不要
 git reset ●ファイル名●　→ 削除したファイルの復元
 git rm --cached ●ファイル名●　→ ファイルは保存するがgitで管理しない方法
 
@@ -48,10 +51,11 @@ git rm --cached ●ファイル名●　→ ファイルは保存するがgitで
 Gitの練習をしていきます。
 基本的なワークフローを学びます。
 
-・git add
-・git commit
-・git rm
-・git status
+・git init → ローカルリポジトリの新規作成
+・git add　→ ローカルファイルをステージングエリアへ追加
+・git commit　→ ステージングエリアに控えているファイルをローカルリポジトリへ移動　※変更にメッセージをつけて記録
+・git rm　→ ファイルの削除
+・git status　→ Gitリポジトリの状況を表示する
 ・git log　（jで下がるkで上がるqでquit）
 　git log -p ：ファイルの差分を表示する
 　git log -n ●数字●：最新のコミットn番目までを表示
@@ -59,6 +63,7 @@ Gitの練習をしていきます。
 　git log --oneline -p [ファイル名]
 　git log --oneline -n ●数字●
 ・git diff
-・git remote add origin ●GitHub上のリモートリポジトリのURL●
+・git remote add origin ●GitHub上のリモートリポジトリのURL●　→ リモートリポジトリ(GitHub)を登録
     remote add → リモートリポジトリ(GitHub)へ追加するよ！
     orrigin → リモートリポジトリ(GitHub)の事　※変数みたいな書き方　これ以降はリモートリポジトリのことを「origin」として呼称することができる(エイリアス)
+・git push origin master[main]　→ ローカルリポジトリの内容をリモートリポジトリ(GitHub)へ送信する
